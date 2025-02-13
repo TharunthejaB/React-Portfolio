@@ -5,10 +5,13 @@
 *{
   box-sizing: border-box;
   font-family: 'Inter';
-  border: 0.3px red dotted;
+  /* border: 0.3px red dotted; */
 }
 html, body {
   height: 100%;
+  background-image: url(/src/assets/Background.svg);
+  background-size: contain;
+  /* background-repeat: no-repeat; */
 }
 
 a{

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <nav className='flex justify-between '>
+    <nav className='flex justify-between sticky top-10 backdrop-blur-xs'>
         <div className='w-auto'>
             <img src="/src/assets/Tharun theja Boyalla.svg" className='w-full h-full'></img>
         </div>
