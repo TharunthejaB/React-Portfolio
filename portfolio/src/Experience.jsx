@@ -4,7 +4,7 @@ function Experience({ experienceData }) {
   return (
     <section className="w-full h-full py-20 flex flex-col justify-center items-center gap-16">
       <h2>Experience</h2>
-      <div className="w-full h-full flex flex-col gap-10">
+      <div className="w-full h-full flex flex-col gap-10 items-center">
         {experienceData.map((data, index) => (
           <div className="w-full h-full flex" key={index}>
             <div className="w-9/12 flex flex-col justify-start gap-4.5">
@@ -20,6 +20,9 @@ function Experience({ experienceData }) {
             </div>
           </div>
         ))}
+        <p>
+          Want to know more about my experience? Download my <a>resume here.</a>
+        </p>
       </div>
     </section>
   );

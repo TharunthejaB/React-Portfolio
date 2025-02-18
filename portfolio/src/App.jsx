@@ -9,6 +9,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Experience from "./Experience";
+import Contact from "./Contact";
 
 function App() {
   const skills = [
@@ -75,15 +76,21 @@ function App() {
     },
   ];
   return (
-    <div className="relative mx-5 md:mx-24 sm:mx-10 max-w-fit">
-      <Navbar />
-      <Herosection />
-      <About />
-      <Skills skillsData={skills} />
-      <Projects projectsData={projects} />
-      <Experience experienceData={experience} />
-      <Widgets />
-    </div>
+    <>
+      <div className="relative mx-5 md:mx-24 sm:mx-10 max-w-fit">
+        <Navbar />
+        <Herosection />
+        <About />
+        <Skills skillsData={skills} />
+        <Projects projectsData={projects} />
+        <Experience experienceData={experience} />
+        <Contact />
+        <Widgets />
+      </div>
+      <div className="w-full h-full text-center bg-gray-400">
+        © 2025 Tharun theja Boyalla. All Rights Reserved.
+      </div>
+    </>
   );
 }
 
