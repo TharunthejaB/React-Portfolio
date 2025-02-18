@@ -77,15 +77,15 @@ function App() {
   ];
   return (
     <>
-      <div className="relative mx-5 md:mx-24 sm:mx-10 max-w-fit">
+      <div className="relative px-5 md:px-24 sm:px-10 w-full">
         <Navbar />
         <Herosection />
-        <About />
+        {/* <About />
         <Skills skillsData={skills} />
         <Projects projectsData={projects} />
         <Experience experienceData={experience} />
         <Contact />
-        <Widgets />
+        <Widgets /> */}
       </div>
       <div className="w-full h-full text-center bg-gray-400">
         © 2025 Tharun theja Boyalla. All Rights Reserved.
