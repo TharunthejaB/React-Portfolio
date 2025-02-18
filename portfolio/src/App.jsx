@@ -8,6 +8,7 @@ import Widgets from "./Widgets";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Experience from "./Experience";
 
 function App() {
   const skills = [
@@ -50,6 +51,29 @@ function App() {
         "I created a fun, multiplayer Ping Pong game using HTML, Sass, and JavaScript. Players can choose their names and pick paddle colors, and the game runs smoothly on any device. It’s a simple yet engaging project that shows off my skills in front-end development and design.",
     },
   ];
+  const experience = [
+    {
+      title: "Software Engineer",
+      company: "CABCS Group India Pvt Ltd.",
+      from: "Oct,2023",
+      to: "present",
+      place: "Puducherry",
+    },
+    {
+      title: "Software Engineer Trainee",
+      company: "CABCS Group India Pvt Ltd.",
+      from: "Apr,2023",
+      to: "Oct,2023",
+      place: "Puducherry",
+    },
+    {
+      title: "Web Developer",
+      company: "CABCS Group India Pvt Ltd.",
+      from: "Oct,2022",
+      to: "Apr,2023",
+      place: "Bengaluru",
+    },
+  ];
   return (
     <div className="relative mx-5 md:mx-24 sm:mx-10 max-w-fit">
       <Navbar />
@@ -57,6 +81,7 @@ function App() {
       <About />
       <Skills skillsData={skills} />
       <Projects projectsData={projects} />
+      <Experience experienceData={experience} />
       <Widgets />
     </div>
   );
