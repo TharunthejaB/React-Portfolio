@@ -81,11 +81,11 @@ function App() {
         <Navbar />
         <Herosection />
         <About />
-        {/* <Skills skillsData={skills} />
+        <Skills skillsData={skills} />
         <Projects projectsData={projects} />
         <Experience experienceData={experience} />
         <Contact />
-        <Widgets /> */}
+        {/* <Widgets /> */}
       </div>
       <div className="w-full h-full text-center bg-gray-400">
         © 2025 Tharun theja Boyalla. All Rights Reserved.

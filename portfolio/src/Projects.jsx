@@ -1,25 +1,27 @@
 import React from "react";
+import Heading from "./Heading";
+import Content from "./Content";
 
 function Projects({ projectsData }) {
   return (
-    <section className="w-full h-full py-20 flex">
+    <section className="w-full h-full py-10 sm:py-20 flex">
       <div className="w-full h-full flex flex-col items-center gap-11">
-        <h2>Projects</h2>
+        <Heading>Projects</Heading>
         <div className="w-full flex flex-col gap-14">
           <div className="w-full flex justify-end">
-            <div className="h-8 w-2xs px-4 flex justify-center items-center bg-amber-300 rounded-full">
-              <p>Personal Projects</p>
+            <div className="h-8 w-[40%] sm:w-2xs px-4 flex justify-center items-center bg-amber-300 rounded-full">
+              <Content>Personal Projects</Content>
             </div>
           </div>
-          <div className="w-full grid grid-cols-2 gap-5 text-white">
+          <div className="w-full flex flex-col sm:grid grid-cols-2 gap-5 text-white">
             {projectsData.map((project, index) => (
               <div className="w-full grid grid-rows-2 ">
                 <div className="w-full flex justify-center relative items-center rounded-tl-[20px] rounded-tr-[20px] overflow-hidden bg-amber-500">
-                  <h2 key={index}>{project.title}</h2>
+                  <Heading key={index}>{project.title}</Heading>
                 </div>
 
                 <div className="w-full h-full flex flex-col py-6 px-5 gap-5 bg-green-600 rounded-bl-[20px] rounded-br-[20px]">
-                  <div className="w-[40%] flex text-xs font-semibold justify-between">
+                  <div className="w-11/12 sm:w-full md:w-[80%] xl:w-[60%] flex text-xs font-semibold justify-between">
                     {project.info.map((info, index) => (
                       <div
                         key={index}
@@ -30,9 +32,9 @@ function Projects({ projectsData }) {
                     ))}
                   </div>
                   <div className="w-full h-full flex justify-between items-end">
-                    <p key={index} className="text-justify w-10/12">
+                    <Content key={index} className="text-justify w-10/12">
                       {project.content}
-                    </p>
+                    </Content>
                     <div className="w-12 h-12 rounded-full bg-green-300"></div>
                   </div>
                 </div>
