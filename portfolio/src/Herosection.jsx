@@ -1,5 +1,6 @@
 import React from "react";
 import Heading from "./Heading";
+import Content from "./Content";
 
 function Herosection() {
   return (
@@ -10,16 +11,16 @@ function Herosection() {
             <Heading>Hi, I'm Tharun theja Boyalla</Heading>
             <Heading className="flex flex-col gap-2.5 sm:block">
               a passionate <div className="sm:hidden block"></div>
-              <span className="text-[#C93D3D] text-[30px] sm:text-[40px]">
+              <span className="text-[#C93D3D] text-[30px] sm:text-2xl lg:text-3xl xl:text-[40px]">
                 Web Developer
               </span>
             </Heading>
           </div>
           <div>
-            <p>
+            <Content>
               I create engaging experiences through design, storytelling, and
               development. Let's bring your ideas to life.
-            </p>
+            </Content>
           </div>
         </div>
         <div>
@@ -28,7 +29,7 @@ function Herosection() {
           </button>
         </div>
       </div>
-      <div className="xl:w-4/12 2xl:w-5/12 hidden items-center justify-end sm:flex">
+      <div className="xl:w-4/12 sm:w-5/12  hidden items-center justify-end sm:flex">
         <img src="/src/assets/T1.png" className="w-full"></img>
       </div>
     </section>

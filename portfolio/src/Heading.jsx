@@ -3,7 +3,7 @@ import React from "react";
 const Heading = ({ children, className = "", ...props }) => {
   return (
     <h2
-      className={`font-bold text-2xl sm:text-lg md:text-xl lg:text-[40px] ${className}`}
+      className={`font-bold text-2xl  lg:text-3xl xl:text-[40px] ${className}`}
       {...props}
     >
       {children}

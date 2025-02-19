@@ -77,7 +77,7 @@ function App() {
   ];
   return (
     <>
-      <div className="relative px-5 md:px-24 sm:px-10 w-full">
+      <div className="relative px-5 xl:px-24 sm:px-10 w-full">
         <Navbar />
         <Herosection />
         {/* <About />
