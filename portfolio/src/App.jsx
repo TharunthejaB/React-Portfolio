@@ -80,8 +80,8 @@ function App() {
       <div className="relative px-5 xl:px-24 sm:px-10 w-full">
         <Navbar />
         <Herosection />
-        {/* <About />
-        <Skills skillsData={skills} />
+        <About />
+        {/* <Skills skillsData={skills} />
         <Projects projectsData={projects} />
         <Experience experienceData={experience} />
         <Contact />
