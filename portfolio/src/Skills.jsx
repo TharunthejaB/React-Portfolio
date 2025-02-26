@@ -15,7 +15,7 @@ function Skills({ skillsData }) {
             key={index}
             className="flex w-full sm:w-4/12 flex-col text-center items-center justify-center gap-8"
           >
-            <Heading className="w-full sm:w-1/2">{skills.text}</Heading>
+            <Heading className="w-full">{skills.text}</Heading>
             <div className="w-full sm:w-1/2 flex sm:grid grid-cols-2 sm:justify-items-center items-center justify-center gap-5">
               {skills.img.map((img, index) => (
                 <img src={img} key={index} className="w-20 h-20" alt="" />

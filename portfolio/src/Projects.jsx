@@ -20,12 +20,16 @@ function Projects({ projectsData }) {
                   <Heading key={index}>{project.title}</Heading>
                 </div>
 
-                <div className="w-full h-full flex flex-col py-6 px-5 gap-5 bg-green-600 rounded-bl-[20px] rounded-br-[20px]">
+                <div
+                  className="w-full h-full flex flex-col py-6 px-5 gap-5 rounded-bl-[20px] rounded-br-[20px]"
+                  style={{ backgroundColor: project.tilecolor }}
+                >
                   <div className="w-11/12 sm:w-full md:w-[80%] xl:w-[60%] flex text-xs font-semibold justify-between">
                     {project.info.map((info, index) => (
                       <div
                         key={index}
-                        className="w-24 h-9 flex justify-center items-center rounded-full bg-green-300"
+                        className="w-24 h-9 flex justify-center items-center rounded-full"
+                        style={{ backgroundColor: project.subbuttoncolor }}
                       >
                         {info}
                       </div>
@@ -35,7 +39,10 @@ function Projects({ projectsData }) {
                     <Content key={index} className="text-justify w-10/12">
                       {project.content}
                     </Content>
-                    <div className="w-12 h-12 rounded-full bg-green-300"></div>
+                    <div
+                      className="w-12 h-12 rounded-full"
+                      style={{ backgroundColor: project.buttoncolor }}
+                    ></div>
                   </div>
                 </div>
               </div>

@@ -44,12 +44,18 @@ function App() {
       info: ["Html, CSS, JS", "UI Design", "Development"],
       content:
         "I created a fun, multiplayer Ping Pong game using HTML, Sass, and JavaScript. Players can choose their names and pick paddle colors, and the game runs smoothly on any device. It’s a simple yet engaging project that shows off my skills in front-end development and design.",
+      tilecolor: "#4FC977",
+      buttoncolor: "#359254",
+      subbuttoncolor: "rgba(51, 146, 84, 0.5)",
     },
     {
       title: "Personal Portfolio",
       info: ["React + JS", "UI Design", "Development"],
       content:
         "I created a fun, multiplayer Ping Pong game using HTML, Sass, and JavaScript. Players can choose their names and pick paddle colors, and the game runs smoothly on any device. It’s a simple yet engaging project that shows off my skills in front-end development and design.",
+      tilecolor: "#1C1F58",
+      buttoncolor: "#363A8E",
+      subbuttoncolor: "rgba(54, 58, 142, 0.5)",
     },
   ];
   const experience = [

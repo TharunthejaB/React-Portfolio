@@ -22,11 +22,30 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="w-full sm:w-[50%] h-full p-8 flex flex-col gap-8.5 bg-gray-400 rounded-[20px]">
-        <input className="w-full h-11 bg-red-500"></input>
-        <input className="w-full h-11 bg-red-500"></input>
-        <input className="w-full h-11 bg-red-500"></input>
-        <input className="w-full h-48 bg-red-500"></input>
+      <div
+        className="w-full sm:w-[50%] h-full p-8 flex flex-col gap-8.5 rounded-[20px]"
+        style={{ backgroundColor: "rgba(30, 30, 30, 0.12)" }}
+      >
+        <input
+          type="text"
+          className="w-full h-11 bg-white rounded-3xl px-5"
+          placeholder="Name"
+        ></input>
+        <input
+          type="text"
+          className="w-full h-11 bg-white rounded-3xl px-5"
+          placeholder="Email"
+        ></input>
+        <input
+          type="text"
+          className="w-full h-11 bg-white rounded-3xl px-5"
+          placeholder="Phone number"
+        ></input>
+        <textarea
+          type="text"
+          className="w-full h-48 bg-white rounded-3xl align-text-top text-start p-5"
+          placeholder="Message"
+        ></textarea>
         <button className="w-full h-14 bg-green-300 text-white rounded-full">
           Submit
         </button>
