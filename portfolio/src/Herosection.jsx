@@ -7,11 +7,11 @@ function Herosection() {
     <section className="w-full h-screen flex justify-between items-center xl:-mt-2 2xl:-mt-8">
       <div className="flex flex-col sm:items-start items-center gap-4.5 w-full sm:w-7/12">
         <div className="flex justify-between flex-col text-center sm:text-left gap-3.5">
-          <div>
+          <div className="flex flex-col gap-2">
             <Heading>Hi, I'm Tharun theja Boyalla</Heading>
             <Heading className="flex flex-col gap-2.5 sm:block">
               a passionate <div className="sm:hidden block"></div>
-              <span className="text-[#C93D3D] text-[30px] sm:text-2xl lg:text-3xl xl:text-[40px]">
+              <span className="text-[#C93D3D] text-[30px] sm:text-2xl lg:text-3xl 2xl:text-[40px]">
                 Web Developer
               </span>
             </Heading>

@@ -24,17 +24,18 @@ function App() {
     {
       text: "Design",
       img: [
-        "/src/assets/react.svg",
-        "/src/assets/react.svg",
-        "/src/assets/react.svg",
+        "/src/assets/figma.svg",
+        "/src/assets/illustrator.svg",
+        "/src/assets/photoshop.svg",
+        "/src/assets/canva.svg",
       ],
     },
     {
       text: "Video Editing",
       img: [
-        "/src/assets/react.svg",
-        "/src/assets/react.svg",
-        "/src/assets/react.svg",
+        "/src/assets/After Effects.svg",
+        "/src/assets/Premiere.svg",
+        "/src/assets/Capcut.svg",
       ],
     },
   ];
@@ -63,7 +64,7 @@ function App() {
       title: "Software Engineer",
       company: "CABCS Group India Pvt Ltd.",
       from: "Oct,2023",
-      to: "present",
+      to: "Present",
       place: "Puducherry",
     },
     {

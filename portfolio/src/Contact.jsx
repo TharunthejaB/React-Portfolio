@@ -6,19 +6,28 @@ function Contact() {
   return (
     <section className="w-full h-full py-10 sm:py-20 flex flex-col sm:flex-row justify-center items-center gap-8">
       <div className="w-full sm:w-[50%] h-full flex flex-col gap-8 text-center sm:text-left">
-        <div>
+        <div className="flex flex-col gap-2">
           <Heading>Have a project in mind?</Heading>
           <Content>Feel free to reach out! I'd love to collaborate.</Content>
         </div>
         <div className="w-full sm:w-[50%] h-full flex gap-6 justify-center sm:justify-start">
           <div>
-            <img src="/src/assets/react.svg" className="w-20 h-20"></img>
+            <img
+              src="/src/assets/linkedin.svg"
+              className="w-15 h-15 2xl:w-20 2xl:h-20"
+            ></img>
           </div>
           <div>
-            <img src="/src/assets/react.svg" className="w-20 h-20"></img>
+            <img
+              src="/src/assets/github.svg"
+              className="w-15 h-15 2xl:w-20 2xl:h-20"
+            ></img>
           </div>
           <div>
-            <img src="/src/assets/react.svg" className="w-20 h-20"></img>
+            <img
+              src="/src/assets/whatsapp.svg"
+              className="w-15 h-15 2xl:w-20 2xl:h-20"
+            ></img>
           </div>
         </div>
       </div>

@@ -22,10 +22,10 @@ function Experience({ experienceData }) {
             </div>
           </div>
         ))}
-        <Content className="text-center">
-          Want to know more about my experience? Download my <a>resume here.</a>
-        </Content>
       </div>
+      <Content className="text-center">
+        Want to know more about my experience? Download my <a>resume here.</a>
+      </Content>
     </section>
   );
 }
