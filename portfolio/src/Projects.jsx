@@ -10,7 +10,13 @@ function Projects({ projectsData }) {
         <div className="w-full flex flex-col gap-14">
           <div className="w-full flex justify-end">
             <div className="h-8 w-[40%] sm:w-2xs px-4 flex justify-center items-center bg-amber-300 rounded-full">
-              <Content>Personal Projects</Content>
+              <Content>
+                <select id="filters" className="outline-0">
+                  <option value="Development">Development</option>
+                  <option value="Design">Design</option>
+                  <option value="Video Editing">Video Editing</option>
+                </select>
+              </Content>
             </div>
           </div>
           <div className="w-full flex flex-col sm:grid grid-cols-2 gap-5 text-white">
