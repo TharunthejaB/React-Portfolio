@@ -9,7 +9,7 @@ function Projects({ projectsData }) {
         <Heading>Projects</Heading>
         <div className="w-full flex flex-col gap-14">
           <div className="w-full flex justify-end">
-            <div className="h-8 w-[40%] sm:w-2xs px-4 flex justify-center items-center bg-amber-300 rounded-full">
+            <div className="h-8 w-[40%] sm:w-2xs px-4 flex justify-center items-center rounded-full bg-[#F4F4F4]">
               <Content>
                 <select id="filters" className="outline-0">
                   <option value="Development">Development</option>
@@ -19,15 +19,28 @@ function Projects({ projectsData }) {
               </Content>
             </div>
           </div>
-          <div className="w-full flex flex-col sm:grid grid-cols-2 gap-5 text-white">
+          <div className="w-full flex flex-col sm:grid grid-cols-2 relative gap-5 text-white">
             {projectsData.map((project, index) => (
               <div className="w-full grid grid-rows-2 ">
-                <div className="w-full flex justify-center relative items-center rounded-tl-[20px] rounded-tr-[20px] overflow-hidden bg-amber-500">
-                  <Heading key={index}>{project.title}</Heading>
+                <div className="w-full h-full flex justify-center relative items-center rounded-tl-[20px] rounded-tr-[20px] overflow-hidden">
+                  <div className="w-full h-full relative">
+                    <img
+                      src={project.img}
+                      className="w-full h-full object-cover blur-[3px]"
+                      alt="Homepage"
+                    />
+                    <div className="w-full h-full bg-black opacity-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+                    <Heading
+                      key={index}
+                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-xl font-bold"
+                    >
+                      {project.title}
+                    </Heading>
+                  </div>
                 </div>
 
                 <div
-                  className="w-full h-full flex flex-col py-6 px-5 gap-5 rounded-bl-[20px] rounded-br-[20px]"
+                  className="w-full h-fit flex flex-col py-6 px-5 gap-5 rounded-bl-[20px] rounded-br-[20px]"
                   style={{ backgroundColor: project.tilecolor }}
                 >
                   <div className="w-11/12 sm:w-full md:w-[80%] xl:w-[60%] flex text-xs font-semibold justify-between">
@@ -41,14 +54,19 @@ function Projects({ projectsData }) {
                       </div>
                     ))}
                   </div>
-                  <div className="w-full h-full flex justify-between items-end">
+                  <div className="w-full flex justify-between items-end">
                     <Content key={index} className="text-justify w-10/12">
                       {project.content}
                     </Content>
                     <div
-                      className="w-12 h-12 rounded-full"
+                      className="w-12 h-12 rounded-full p-3"
                       style={{ backgroundColor: project.buttoncolor }}
-                    ></div>
+                    >
+                      <img
+                        src="/src/assets/Vector.svg"
+                        className="w-full h-full"
+                      ></img>
+                    </div>
                   </div>
                 </div>
               </div>

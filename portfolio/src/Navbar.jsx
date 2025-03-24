@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { a } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -12,9 +12,9 @@ function Navbar() {
       </div>
       <div>
         <div className="hidden gap-[8vw] sm:flex">
-          <Link to="about">About</Link>
-          <Link>Work</Link>
-          <Link>Contact</Link>
+          <a>About</a>
+          <a>Work</a>
+          <a>Contact</a>
         </div>
       </div>
     </nav>

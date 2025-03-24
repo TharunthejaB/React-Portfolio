@@ -10,7 +10,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Experience from "./Experience";
 import Contact from "./Contact";
-import { Router, Routes } from "react-router-dom";
+import { BrowserRouter, Routes } from "react-router-dom";
 
 function App() {
   const skills = [
@@ -18,8 +18,9 @@ function App() {
       text: "Development",
       img: [
         "/src/assets/react.svg",
-        "/src/assets/react.svg",
-        "/src/assets/react.svg",
+        "/src/assets/js.svg",
+        "/src/assets/tailwind.svg",
+        "/src/assets/html.svg",
       ],
     },
     {
@@ -49,6 +50,7 @@ function App() {
       tilecolor: "#4FC977",
       buttoncolor: "#359254",
       subbuttoncolor: "rgba(51, 146, 84, 0.5)",
+      img: "/src/assets/Homepage.png",
     },
     {
       title: "Personal Portfolio",
@@ -58,6 +60,7 @@ function App() {
       tilecolor: "#1C1F58",
       buttoncolor: "#363A8E",
       subbuttoncolor: "rgba(54, 58, 142, 0.5)",
+      img: "/src/assets/Desktop.png",
     },
   ];
   const experience = [
@@ -86,18 +89,14 @@ function App() {
   return (
     <>
       <div className="relative px-5 xl:px-24 sm:px-10 w-full">
-        <Router>
-          <Navbar />
-          <Routes>
-            <Herosection />
-            <About id="about" />
-            <Skills skillsData={skills} />
-            <Projects projectsData={projects} />
-            <Experience experienceData={experience} />
-            <Contact />
-            {/* <Widgets /> */}
-          </Routes>
-        </Router>
+        <Navbar />
+        <Herosection />
+        <About id="about" />
+        <Skills skillsData={skills} />
+        <Projects projectsData={projects} />
+        <Experience experienceData={experience} />
+        <Contact />
+        <Widgets />
       </div>
       <div className="w-full h-full text-center bg-gray-400">
         © 2025 Tharun theja Boyalla. All Rights Reserved.
