@@ -3,18 +3,26 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between sticky top-10 backdrop-blur-xs">
-      <div className="w-auto">
+    <nav className="flex justify-between sticky top-10 backdrop-blur-xs items-center">
+      <div className="w-auto h-fit">
         <img
           src="/src/assets/Tharun theja Boyalla.svg"
           className="w-full h-full"
         ></img>
       </div>
-      <div>
+      <div className="w-auto h-fit">
         <div className="hidden gap-[8vw] sm:flex">
           <a>About</a>
           <a>Work</a>
           <a>Contact</a>
+        </div>
+        <div
+          className="flex flex-col gap-1.5 sm:hidden w-8 h-6 justify-center items-center"
+          id="hamburger"
+        >
+          <div className="bg-gray-700 w-full h-1.5 rounded-3xl"></div>
+          <div className="bg-gray-700 w-full h-1.5 rounded-3xl"></div>
+          <div className="bg-gray-700 w-full h-1.5 rounded-3xl"></div>
         </div>
       </div>
     </nav>
