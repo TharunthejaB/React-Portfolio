@@ -5,7 +5,13 @@ import Content from "./Content";
 function Experience({ experienceData }) {
   return (
     <section className="w-full h-full py-10 sm:py-20 flex flex-col justify-center items-center gap-8 sm:gap-16">
-      <Heading>Experience</Heading>
+      <div className="relative">
+        <Heading>Experince</Heading>
+        <img
+          src="/src/assets/expul.svg"
+          className="w-full h-full absolute -z-1 top-5"
+        ></img>
+      </div>
       <div className="w-full h-full flex flex-col gap-10 items-center">
         {experienceData.map((data, index) => (
           <div className="w-full h-full flex" key={index}>

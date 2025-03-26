@@ -69,7 +69,7 @@ function App() {
       title: "Ping Pong Game",
       info: ["UI Design"],
       content:
-        "I designed a visually engaging and interactive multiplayer Ping Pong game with a sleek, user-friendly interface for desktop devices. Players can personalize their experience by selecting names and paddle colors, creating a unique feel. The design focuses on a clean, intuitive layout with vibrant colors, enhancing gameplay with smooth interactions and dynamic visuals.",
+        "I designed a visually engaging and interactive multiplayer Ping Pong game with a sleek, user-friendly interface for desktop devices. Players can personalize their experience by selecting names and paddle colors, creating a unique feel. The design focuses on a clean, intuitive layout with vibrant colors, enhancing gameplay with smooth interactions.",
       tilecolor: "#4FC977",
       buttoncolor: "#359254",
       subbuttoncolor: "rgba(51, 146, 84, 0.5)",

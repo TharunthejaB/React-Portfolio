@@ -5,8 +5,14 @@ import Content from "./Content";
 function Skills({ skillsData }) {
   return (
     <section className="w-full h-full py-10 sm:py-20 flex flex-col justify-center items-center gap-10 sm:gap-20">
-      <div className="text-center flex flex-col">
-        <Heading>Skills</Heading>
+      <div className="text-center flex flex-col items-center">
+        <div className="relative w-fit">
+          <Heading className="w-fit">Skills</Heading>
+          <img
+            src="/src/assets/skillsul.svg"
+            className="w-full h-full absolute -z-1 top-5"
+          ></img>
+        </div>
         <Content>Here's a quick breakdown of what I bring to the table</Content>
       </div>
       <div className="w-full flex flex-col sm:flex-row gap-10">

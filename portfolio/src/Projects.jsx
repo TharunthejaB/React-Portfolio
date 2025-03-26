@@ -12,7 +12,13 @@ function Projects({ projectsData }) {
   return (
     <section className="w-full h-full py-10 sm:py-20 flex">
       <div className="w-full h-full flex flex-col items-center gap-11">
-        <Heading>Projects</Heading>
+        <div className="relative">
+          <Heading>Projects</Heading>
+          <img
+            src="/src/assets/projectul.svg"
+            className="w-full h-full absolute -z-1 top-5"
+          ></img>
+        </div>
         <div className="w-full flex flex-col gap-14">
           <div className="w-full flex justify-end">
             <div className="h-8 w-[40%] sm:w-2xs px-4 flex justify-center items-center rounded-full bg-[#F4F4F4]">
