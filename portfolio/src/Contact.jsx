@@ -4,7 +4,10 @@ import Content from "./Content";
 
 function Contact() {
   return (
-    <section className="w-full h-full py-10 sm:py-20 flex flex-col sm:flex-row justify-center items-center gap-8">
+    <section
+      className="w-full h-full py-10 sm:py-20 flex flex-col sm:flex-row justify-center items-center gap-8"
+      id="contact"
+    >
       <div className="w-full sm:w-[50%] h-full flex flex-col gap-8 text-center sm:text-left">
         <div className="flex flex-col gap-2">
           <Heading>Have a project in mind?</Heading>
@@ -37,22 +40,22 @@ function Contact() {
       >
         <input
           type="text"
-          className="w-full h-11 bg-white rounded-3xl px-5"
+          className="w-full h-11 bg-white rounded-3xl px-5 outline-gray-300"
           placeholder="Name"
         ></input>
         <input
           type="text"
-          className="w-full h-11 bg-white rounded-3xl px-5"
+          className="w-full h-11 bg-white rounded-3xl px-5 outline-gray-300"
           placeholder="Email"
         ></input>
         <input
           type="text"
-          className="w-full h-11 bg-white rounded-3xl px-5"
+          className="w-full h-11 bg-white rounded-3xl px-5 outline-gray-300"
           placeholder="Phone number"
         ></input>
         <textarea
           type="text"
-          className="w-full h-48 bg-white rounded-3xl align-text-top text-start p-5"
+          className="w-full h-48 bg-white rounded-3xl align-text-top text-start p-5 outline-gray-300"
           placeholder="Message"
         ></textarea>
         <button className="w-full h-14 bg-green-300 text-white rounded-full">

@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "./Heading";
 import Content from "./Content";
+import { Link } from "react-router-dom";
 
 function Experience({ experienceData }) {
   return (
@@ -30,7 +31,8 @@ function Experience({ experienceData }) {
         ))}
       </div>
       <Content className="text-center">
-        Want to know more about my experience? Download my <a>resume here.</a>
+        Want to know more about my experience? Download my
+        <Link to="">resume here.</Link>
       </Content>
     </section>
   );

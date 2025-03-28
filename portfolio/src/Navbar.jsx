@@ -1,5 +1,4 @@
 import React from "react";
-// import { a } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -12,9 +11,9 @@ function Navbar() {
       </div>
       <div className="w-auto h-fit">
         <div className="hidden gap-[8vw] sm:flex">
-          <a>About</a>
-          <a>Work</a>
-          <a>Contact</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
         </div>
         <div
           className="flex flex-col gap-1.5 sm:hidden w-8 h-6 justify-center items-center"

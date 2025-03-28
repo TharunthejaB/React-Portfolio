@@ -47,7 +47,7 @@ function App() {
       title: "Ping Pong Game",
       info: ["Html, CSS, JS", "Development"],
       content:
-        "I developed an interactive, multiplayer Ping Pong game using HTML, Sass, and JavaScript. This project allows players to personalize their experience by selecting their names and choosing paddle colors. The game is fully responsive, ensuring smooth gameplay across all devices. It’s a fun and engaging project that highlights my skills in front-end development, UI/UX design, and implementing real-time interactive features.",
+        "I developed an interactive, multiplayer Ping Pong game using HTML, Sass, and JavaScript. This project allows players to personalize their experience by selecting their names and choosing paddle colors. The game is fully responsive, ensuring smooth gameplay across all devices. It’s a fun and engaging project that highlights my skills in front-end development, UI/UX design, and implementing real-time features.",
       tilecolor: "#4FC977",
       buttoncolor: "#359254",
       subbuttoncolor: "rgba(51, 146, 84, 0.5)",
@@ -56,7 +56,7 @@ function App() {
     {
       category: "Development",
       title: "Personal Portfolio",
-      info: ["React + JS", "UI Design", "Development"],
+      info: ["React + JS", "Development"],
       content:
         "I built a personal portfolio using React and Tailwind CSS to showcase my work and skills. The portfolio is fully responsive, with a sleek design that adapts seamlessly across devices. It features sections highlighting my projects, experience, and contact information, all designed with user experience in mind. This project demonstrates my proficiency in modern front-end development and UI design principles.",
       tilecolor: "#1C1F58",
@@ -81,6 +81,17 @@ function App() {
       info: ["UI Design"],
       content:
         "I designed a visually appealing personal portfolio with React and Tailwind CSS to showcase my work. The design features a clean, intuitive layout with sections for projects, experience, and contact. The user interface emphasizes simplicity, ensuring a seamless experience. The modern aesthetic offers a polished presentation across all devices.",
+      tilecolor: "#1C1F58",
+      buttoncolor: "#363A8E",
+      subbuttoncolor: "rgba(54, 58, 142, 0.5)",
+      img: "/src/assets/Desktop.png",
+    },
+    {
+      category: "Video Editing",
+      title: "BunSek Product Video",
+      info: ["After Effects", "Premiere Pro", "Illustrator"],
+      content:
+        "I built a personal portfolio using React and Tailwind CSS to showcase my work and skills. The portfolio is fully responsive, with a sleek design that adapts seamlessly across devices. It features sections highlighting my projects, experience, and contact information, all designed with user experience in mind. This project demonstrates my proficiency in modern front-end development and UI design principles.",
       tilecolor: "#1C1F58",
       buttoncolor: "#363A8E",
       subbuttoncolor: "rgba(54, 58, 142, 0.5)",
@@ -112,19 +123,21 @@ function App() {
   ];
   return (
     <>
-      <div className="relative px-5 xl:px-24 sm:px-10 w-full">
-        <Navbar />
-        <Herosection />
-        <About id="about" />
-        <Skills skillsData={skills} />
-        <Projects projectsData={projects} />
-        <Experience experienceData={experience} />
-        <Contact />
-        <Widgets />
-      </div>
-      <div className="w-full h-full text-center bg-gray-400">
-        © 2025 Tharun theja Boyalla. All Rights Reserved.
-      </div>
+      <BrowserRouter>
+        <div className="relative px-5 xl:px-24 sm:px-10 w-full">
+          <Navbar />
+          <Herosection />
+          <About />
+          <Skills skillsData={skills} />
+          <Projects projectsData={projects} />
+          <Experience experienceData={experience} />
+          <Contact />
+          <Widgets />
+        </div>
+        <div className="w-full h-full text-center bg-gray-200 text-gray-500">
+          © 2025 Tharun theja Boyalla. All Rights Reserved.
+        </div>
+      </BrowserRouter>
     </>
   );
 }

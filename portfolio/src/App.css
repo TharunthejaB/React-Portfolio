@@ -12,6 +12,7 @@ body {
   background-image: url(/src/assets/Background.svg);
   background-size: contain;
   /* background-repeat: no-repeat; */
+  scroll-behavior: smooth;
 }
 
 a {

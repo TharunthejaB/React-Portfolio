@@ -10,8 +10,8 @@ function Projects({ projectsData }) {
     setSelectedSection(event.target.value);
   };
   return (
-    <section className="w-full h-full py-10 sm:py-20 flex">
-      <div className="w-full h-full flex flex-col items-center gap-11">
+    <section className="w-full pt-10 sm:pt-20 flex" id="work">
+      <div className="w-full flex flex-col items-center gap-10">
         <div className="relative">
           <Heading>Projects</Heading>
           <img
@@ -22,7 +22,7 @@ function Projects({ projectsData }) {
         <div className="w-full flex flex-col gap-14">
           <div className="w-full flex justify-end">
             <div className="h-8 w-[40%] sm:w-2xs px-4 flex justify-center items-center rounded-full bg-[#F4F4F4]">
-              <Content>
+              <div className="text-xl">
                 <select
                   id="filters"
                   className="outline-0"
@@ -33,15 +33,16 @@ function Projects({ projectsData }) {
                   <option value="Design">Design</option>
                   <option value="Video Editing">Video Editing</option>
                 </select>
-              </Content>
+              </div>
             </div>
           </div>
-          <div className="w-full h-full flex flex-col sm:grid grid-cols-2 relative gap-5 text-white">
+          <div className="w-full place-items-center sm:grid grid-cols-2 relative gap-5 text-white">
             {projectsData.map(
               (project, index) =>
                 project.category === selectedSection && (
-                  <div className="w-full h-full grid grid-rows-[60%, 40%]">
-                    <div className="w-full  flex justify-center relative items-center rounded-tl-[20px] rounded-tr-[20px] overflow-hidden">
+                  <div className="w-full grid grid-rows-2">
+                    {/* First Row (40%) */}
+                    <div className="w-full flex justify-center relative items-center rounded-tl-[20px] rounded-tr-[20px] overflow-hidden">
                       <div className="w-full h-full relative">
                         <img
                           src={project.img}
@@ -58,6 +59,7 @@ function Projects({ projectsData }) {
                       </div>
                     </div>
 
+                    {/* Second Row (60%) */}
                     <div
                       className="w-full h-fit flex flex-col py-6 px-5 gap-5 rounded-bl-[20px] rounded-br-[20px]"
                       style={{ backgroundColor: project.tilecolor }}
@@ -73,10 +75,12 @@ function Projects({ projectsData }) {
                           </div>
                         ))}
                       </div>
+
                       <div className="w-full flex justify-between items-end">
-                        <Content key={index} className="text-justify w-10/12">
+                        <div className="w-10/12 text-justify 2xl:text-xl 2xl:leading-10 leading-6.5">
                           {project.content}
-                        </Content>
+                        </div>
+
                         <div
                           className="w-12 h-12 rounded-full p-3"
                           style={{ backgroundColor: project.buttoncolor }}

@@ -18,7 +18,10 @@ function About() {
     },
   ];
   return (
-    <section className="w-full h-full py-10 sm:py-20 flex flex-col justify-center items-center gap-10 sm:gap-16">
+    <section
+      className="w-full h-full py-10 sm:py-20 flex flex-col justify-center items-center gap-10 sm:gap-16"
+      id="about"
+    >
       <div className="relative">
         <Heading>About</Heading>
         <img
