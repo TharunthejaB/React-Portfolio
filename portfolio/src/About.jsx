@@ -55,7 +55,11 @@ function About() {
                 style={{ backgroundColor: `rgba(${about.bgColor}, 0.5)` }}
                 key={index}
               >
-                <img src={about.img} className="w-full"></img>
+                <img
+                  src={about.img}
+                  className="w-3/4 hover:w-full"
+                  style={{ animation: "2s ease-in-out" }}
+                ></img>
               </div>
             ))}
           </div>

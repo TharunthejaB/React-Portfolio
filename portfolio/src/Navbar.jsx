@@ -4,10 +4,12 @@ function Navbar() {
   return (
     <nav className="flex justify-between sticky top-10 backdrop-blur-xs items-center">
       <div className="w-auto h-fit">
-        <img
-          src="/src/assets/Tharun theja Boyalla.svg"
-          className="w-full h-full"
-        ></img>
+        <a href="#herosection">
+          <img
+            src="/src/assets/Tharun theja Boyalla.svg"
+            className="w-full h-full"
+          ></img>
+        </a>
       </div>
       <div className="w-auto h-fit">
         <div className="hidden gap-[8vw] sm:flex">

@@ -26,10 +26,7 @@ function Widgets() {
     };
   }, []);
   return (
-    <div
-      className="bottom-10 flex justify-between sticky items-center"
-      onClick={scrollToTop}
-    >
+    <div className="bottom-10 flex justify-between sticky items-center">
       <div
         className="rounded-full w-11 h-11 flex justify-center items-center bg-[#FFD857]"
         id="themechange"
@@ -45,6 +42,7 @@ function Widgets() {
           opacity: isVisible ? 1 : 0, // Optional: Adds smooth fade effect
           transition: "visibility 0.3s, opacity 0.3s", // Optional: Smooth transition
         }}
+        onClick={scrollToTop}
       >
         <img src="/src/assets/uparrow.svg" className="invert w-7 h-7"></img>
       </div>

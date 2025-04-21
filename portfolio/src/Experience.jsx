@@ -1,13 +1,12 @@
 import React from "react";
 import Heading from "./Heading";
 import Content from "./Content";
-import { Link } from "react-router-dom";
 
 function Experience({ experienceData }) {
   return (
     <section className="w-full h-full py-10 sm:py-20 flex flex-col justify-center items-center gap-8 sm:gap-16">
       <div className="relative">
-        <Heading>Experince</Heading>
+        <Heading>Experience</Heading>
         <img
           src="/src/assets/expul.svg"
           className="w-full h-full absolute -z-1 top-5"
@@ -32,7 +31,9 @@ function Experience({ experienceData }) {
       </div>
       <Content className="text-center">
         Want to know more about my experience? Download my
-        <Link to="">resume here.</Link>
+        <a href="" className="hover:text-blue-600">
+          resume here.
+        </a>
       </Content>
     </section>
   );

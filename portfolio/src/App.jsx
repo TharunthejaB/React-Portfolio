@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -11,6 +11,7 @@ import Projects from "./Projects";
 import Experience from "./Experience";
 import Contact from "./Contact";
 import { BrowserRouter, Routes } from "react-router-dom";
+import Loader from "./Loader";
 
 function App() {
   const skills = [
@@ -47,18 +48,19 @@ function App() {
       title: "Ping Pong Game",
       info: ["Html, CSS, JS", "Development"],
       content:
-        "I developed an interactive, multiplayer Ping Pong game using HTML, Sass, and JavaScript. This project allows players to personalize their experience by selecting their names and choosing paddle colors. The game is fully responsive, ensuring smooth gameplay across all devices. It’s a fun and engaging project that highlights my skills in front-end development, UI/UX design, and implementing real-time features.",
+        "Built a responsive, interactive multiplayer Ping Pong game using HTML, Sass, and JavaScript. Players can customize names and paddle colors, showcasing my front-end, UI/UX, and real-time development skills.",
       tilecolor: "#4FC977",
       buttoncolor: "#359254",
       subbuttoncolor: "rgba(51, 146, 84, 0.5)",
       img: "/src/assets/Homepage.png",
+      link: "https://tharunthejab.github.io/Ping-Pong-Game/",
     },
     {
       category: "Development",
       title: "Personal Portfolio",
       info: ["React + JS", "Development"],
       content:
-        "I built a personal portfolio using React and Tailwind CSS to showcase my work and skills. The portfolio is fully responsive, with a sleek design that adapts seamlessly across devices. It features sections highlighting my projects, experience, and contact information, all designed with user experience in mind. This project demonstrates my proficiency in modern front-end development and UI design principles.",
+        "Created a responsive personal portfolio using React and Tailwind CSS, featuring projects, experience, and contact info. Designed with a sleek UI to highlight my front-end skills and focus on user experience.",
       tilecolor: "#1C1F58",
       buttoncolor: "#363A8E",
       subbuttoncolor: "rgba(54, 58, 142, 0.5)",
@@ -69,18 +71,19 @@ function App() {
       title: "Ping Pong Game",
       info: ["UI Design"],
       content:
-        "I designed a visually engaging and interactive multiplayer Ping Pong game with a sleek, user-friendly interface for desktop devices. Players can personalize their experience by selecting names and paddle colors, creating a unique feel. The design focuses on a clean, intuitive layout with vibrant colors, enhancing gameplay with smooth interactions.",
+        "Designed an interactive multiplayer Ping Pong game with a sleek UI for desktop. Features name and paddle color customization, with a clean layout, vibrant colors, and smooth user interactions.",
       tilecolor: "#4FC977",
       buttoncolor: "#359254",
       subbuttoncolor: "rgba(51, 146, 84, 0.5)",
       img: "/src/assets/Homepage.png",
+      link: "https://www.figma.com/design/IAl81RHh3GFjCftcwLcZBQ/Ping-Pong-UI?node-id=0-1&t=vwKM7OHVWSSQEFpQ-1",
     },
     {
       category: "Design",
       title: "Personal Portfolio",
       info: ["UI Design"],
       content:
-        "I designed a visually appealing personal portfolio with React and Tailwind CSS to showcase my work. The design features a clean, intuitive layout with sections for projects, experience, and contact. The user interface emphasizes simplicity, ensuring a seamless experience. The modern aesthetic offers a polished presentation across all devices.",
+        "Designed a modern, responsive portfolio using React and Tailwind CSS. Features a clean layout with sections for projects, experience, and contact, focusing on simplicity and seamless user experience.",
       tilecolor: "#1C1F58",
       buttoncolor: "#363A8E",
       subbuttoncolor: "rgba(54, 58, 142, 0.5)",
@@ -96,6 +99,7 @@ function App() {
       buttoncolor: "#363A8E",
       subbuttoncolor: "rgba(54, 58, 142, 0.5)",
       img: "/src/assets/Desktop.png",
+      link: "https://youtu.be/qVRJ-TUb4z8?si=YmIRyzE2d6NMgb7D",
     },
   ];
   const experience = [
@@ -121,22 +125,40 @@ function App() {
       place: "Bengaluru",
     },
   ];
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time (e.g. 5 seconds)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <BrowserRouter>
-        <div className="relative px-5 xl:px-24 sm:px-10 w-full">
-          <Navbar />
-          <Herosection />
-          <About />
-          <Skills skillsData={skills} />
-          <Projects projectsData={projects} />
-          <Experience experienceData={experience} />
-          <Contact />
-          <Widgets />
-        </div>
-        <div className="w-full h-full text-center bg-gray-200 text-gray-500">
-          © 2025 Tharun theja Boyalla. All Rights Reserved.
-        </div>
+        {loading ? (
+          <Loader />
+        ) : (
+          <>
+            <div className="relative px-5 xl:px-24 sm:px-10 w-full">
+              <Navbar />
+              <Herosection />
+              <About />
+              <Skills skillsData={skills} />
+              <Projects projectsData={projects} />
+              <Experience experienceData={experience} />
+              <Contact />
+              <Widgets />
+            </div>
+            <div className="w-full h-full text-center bg-gray-200 text-gray-500">
+              © 2025 Tharun theja Boyalla. All Rights Reserved.
+            </div>
+          </>
+        )}
       </BrowserRouter>
     </>
   );
