@@ -5,15 +5,15 @@ import Content from "./Content";
 function About() {
   const aboutpic = [
     {
-      img: "/src/assets/about1.png",
+      img: "/public/assets/about1.png",
       bgColor: "11, 164, 224",
     },
     {
-      img: "/src/assets/about2.png",
+      img: "/public/assets/about2.png",
       bgColor: "254, 208, 73",
     },
     {
-      img: "/src/assets/about3.png",
+      img: "/public/assets/about3.png",
       bgColor: "0, 113, 206",
     },
   ];
@@ -25,14 +25,14 @@ function About() {
       <div className="relative">
         <Heading>About</Heading>
         <img
-          src="/src/assets/aboutul.svg"
+          src="/public/assets/aboutul.svg"
           className="w-full h-full absolute -z-1 top-5"
         ></img>
       </div>
       <div className="flex flex-col sm:flex-row justify-between w-full items-center gap-4.5">
         <div className="xl:w-4/12 h-full">
           <img
-            src="/src/assets/T2.png"
+            src="/public/assets/T2.png"
             alt=""
             className="w-full h-full object-cover"
           />

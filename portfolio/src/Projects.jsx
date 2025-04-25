@@ -16,7 +16,7 @@ function Projects({ projectsData }) {
           <div className="relative">
             <Heading>Projects</Heading>
             <img
-              src="/src/assets/projectul.svg"
+              src="/public/assets/projectul.svg"
               className="w-full h-full absolute -z-1 top-5"
             ></img>
           </div>
@@ -91,7 +91,7 @@ function Projects({ projectsData }) {
                           >
                             <a href={project.link} target="_blank">
                               <img
-                                src="/src/assets/Vector.svg"
+                                src="/public/assets/Vector.svg"
                                 className="w-full h-full"
                               ></img>
                             </a>
