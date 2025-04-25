@@ -60,7 +60,7 @@ function Contact() {
               target="_blank"
             >
               <img
-                src="/assets/linkedin.svg"
+                src="\assets\linkedin.svg"
                 className="w-15 h-15 2xl:w-20 2xl:h-20"
               ></img>
             </a>
