@@ -31,7 +31,7 @@ function Widgets() {
         className="rounded-full w-11 h-11 flex justify-center items-center bg-[#FFD857]"
         id="themechange"
       >
-        <img src="/public/assets/light.svg"></img>
+        <img src="/assets/light.svg"></img>
       </div>
 
       <div
@@ -44,7 +44,7 @@ function Widgets() {
         }}
         onClick={scrollToTop}
       >
-        <img src="/public/assets/uparrow.svg" className="invert w-7 h-7"></img>
+        <img src="/assets/uparrow.svg" className="invert w-7 h-7"></img>
       </div>
     </div>
   );

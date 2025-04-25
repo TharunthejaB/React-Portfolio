@@ -6,7 +6,7 @@ function Navbar() {
       <div className="w-auto h-fit">
         <a href="#herosection">
           <img
-            src="/public/assets/Tharun theja Boyalla.svg"
+            src="/assets/Tharun theja Boyalla.svg"
             className="w-full h-full"
           ></img>
         </a>

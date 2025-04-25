@@ -9,7 +9,7 @@ function Skills({ skillsData }) {
         <div className="relative w-fit">
           <Heading className="w-fit">Skills</Heading>
           <img
-            src="/public/assets/skillsul.svg"
+            src="/assets/skillsul.svg"
             className="w-full h-full absolute -z-1 top-5"
           ></img>
         </div>

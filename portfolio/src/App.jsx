@@ -16,27 +16,27 @@ function App() {
     {
       text: "Development",
       img: [
-        "/public/assets/react.svg",
-        "/public/assets/js.svg",
-        "/public/assets/tailwind.svg",
-        "/public/assets/html.svg",
+        "/assets/react.svg",
+        "/assets/js.svg",
+        "/assets/tailwind.svg",
+        "/assets/html.svg",
       ],
     },
     {
       text: "Design",
       img: [
-        "/public/assets/figma.svg",
-        "/public/assets/illustrator.svg",
-        "/public/assets/photoshop.svg",
-        "/public/assets/canva.svg",
+        "/assets/figma.svg",
+        "/assets/illustrator.svg",
+        "/assets/photoshop.svg",
+        "/assets/canva.svg",
       ],
     },
     {
       text: "Video Editing",
       img: [
-        "/public/assets/After Effects.svg",
-        "/public/assets/Premiere.svg",
-        "/public/assets/Capcut.svg",
+        "/assets/After Effects.svg",
+        "/assets/Premiere.svg",
+        "/assets/Capcut.svg",
       ],
     },
   ];
@@ -50,7 +50,7 @@ function App() {
       tilecolor: "#4FC977",
       buttoncolor: "#359254",
       subbuttoncolor: "rgba(51, 146, 84, 0.5)",
-      img: "/public/assets/Homepage.png",
+      img: "/assets/Homepage.png",
       link: "https://tharunthejab.github.io/Ping-Pong-Game/",
     },
     {
@@ -62,7 +62,7 @@ function App() {
       tilecolor: "#1C1F58",
       buttoncolor: "#363A8E",
       subbuttoncolor: "rgba(54, 58, 142, 0.5)",
-      img: "/public/assets/Desktop.png",
+      img: "/assets/Desktop.png",
     },
     {
       category: "Design",
@@ -73,7 +73,7 @@ function App() {
       tilecolor: "#4FC977",
       buttoncolor: "#359254",
       subbuttoncolor: "rgba(51, 146, 84, 0.5)",
-      img: "/public/assets/Homepage.png",
+      img: "/assets/Homepage.png",
       link: "https://www.figma.com/design/IAl81RHh3GFjCftcwLcZBQ/Ping-Pong-UI?node-id=0-1&t=vwKM7OHVWSSQEFpQ-1",
     },
     {
@@ -85,7 +85,7 @@ function App() {
       tilecolor: "#1C1F58",
       buttoncolor: "#363A8E",
       subbuttoncolor: "rgba(54, 58, 142, 0.5)",
-      img: "/public/assets/Desktop.png",
+      img: "/assets/Desktop.png",
     },
     {
       category: "Video Editing",
@@ -96,7 +96,7 @@ function App() {
       tilecolor: "#1C1F58",
       buttoncolor: "#363A8E",
       subbuttoncolor: "rgba(54, 58, 142, 0.5)",
-      img: "/public/assets/Desktop.png",
+      img: "/assets/Desktop.png",
       link: "https://youtu.be/qVRJ-TUb4z8?si=YmIRyzE2d6NMgb7D",
     },
   ];

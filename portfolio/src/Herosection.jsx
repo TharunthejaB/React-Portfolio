@@ -41,7 +41,7 @@ function Herosection() {
         </div>
       </div>
       <div className="xl:w-4/12 sm:w-5/12  hidden items-center justify-end sm:flex">
-        <img src="/public/assets/T1.png" className="w-full"></img>
+        <img src="/assets/T1.png" className="w-full"></img>
       </div>
     </section>
   );

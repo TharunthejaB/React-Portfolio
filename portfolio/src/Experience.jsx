@@ -8,7 +8,7 @@ function Experience({ experienceData }) {
       <div className="relative">
         <Heading>Experience</Heading>
         <img
-          src="/public/assets/expul.svg"
+          src="/assets/expul.svg"
           className="w-full h-full absolute -z-1 top-5"
         ></img>
       </div>

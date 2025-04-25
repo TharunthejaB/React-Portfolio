@@ -60,7 +60,7 @@ function Contact() {
               target="_blank"
             >
               <img
-                src="/public/assets/linkedin.svg"
+                src="/assets/linkedin.svg"
                 className="w-15 h-15 2xl:w-20 2xl:h-20"
               ></img>
             </a>
@@ -68,7 +68,7 @@ function Contact() {
           <div>
             <a href="https://github.com/TharunthejaB" target="_blank">
               <img
-                src="/public/assets/github.svg"
+                src="/assets/github.svg"
                 className="w-15 h-15 2xl:w-20 2xl:h-20"
               ></img>
             </a>
@@ -79,7 +79,7 @@ function Contact() {
               target="_blank"
             >
               <img
-                src="/public/assets/whatsapp.svg"
+                src="/assets/whatsapp.svg"
                 className="w-15 h-15 2xl:w-20 2xl:h-20"
               ></img>
             </a>
