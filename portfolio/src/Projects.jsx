@@ -17,12 +17,12 @@ function Projects({ projectsData }) {
             <Heading>Projects</Heading>
             <img
               src="/assets/projectul.svg"
-              className="w-full h-full absolute -z-1 top-5"
+              className="w-full h-full absolute  top-5"
             ></img>
           </div>
           <div className="w-full flex flex-col gap-14">
             <div className="w-full flex justify-end">
-              <div className="h-8 w-[40%] sm:w-2xs px-4 flex justify-center items-center rounded-full bg-[#F4F4F4]">
+              <div className="h-8 w-[40%] sm:w-2xs px-4 flex justify-center items-center rounded-full bg-[#F4F4F4] dark:bg-[#2D2D2D] dark: text-white">
                 <div className="text-xl">
                   <select
                     id="filters"
@@ -30,9 +30,15 @@ function Projects({ projectsData }) {
                     value={selectedSection}
                     onChange={handleChange}
                   >
-                    <option value="Development">Development</option>
-                    <option value="Design">Design</option>
-                    <option value="Video Editing">Video Editing</option>
+                    <option value="Development" className="text-black">
+                      Development
+                    </option>
+                    <option value="Design" className="text-black">
+                      Design
+                    </option>
+                    <option value="Video Editing" className="text-black">
+                      Video Editing
+                    </option>
                   </select>
                 </div>
               </div>

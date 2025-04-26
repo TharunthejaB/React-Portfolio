@@ -26,7 +26,7 @@ function About() {
         <Heading>About</Heading>
         <img
           src="/assets/aboutul.svg"
-          className="w-full h-full absolute -z-1 top-5"
+          className="w-full h-full absolute z-0 top-5"
         ></img>
       </div>
       <div className="flex flex-col sm:flex-row justify-between w-full items-center gap-4.5">

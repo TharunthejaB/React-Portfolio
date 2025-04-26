@@ -15,6 +15,7 @@ function App() {
   const skills = [
     {
       text: "Development",
+      color: "#D36060",
       img: [
         "/assets/react.svg",
         "/assets/js.svg",
@@ -24,6 +25,7 @@ function App() {
     },
     {
       text: "Design",
+      color: "#42C096",
       img: [
         "/assets/figma.svg",
         "/assets/illustrator.svg",
@@ -33,6 +35,7 @@ function App() {
     },
     {
       text: "Video Editing",
+      color: "#767BFE",
       img: [
         "/assets/After Effects.svg",
         "/assets/Premiere.svg",
@@ -135,14 +138,35 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    return localStorage.getItem("darkMode") === "true";
+  });
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add("dark");
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("darkMode", "true");
+      console.log("true");
+    } else {
+      document.body.classList.remove("dark");
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("darkMode", "false");
+    }
+  }, [isDarkMode]);
+
   return (
     <>
       <BrowserRouter>
         {loading ? (
           <Loader />
         ) : (
-          <>
-            <div className="relative px-5 xl:px-24 sm:px-10 w-full">
+          <div className="w-full min-h-screen bg-white dark:bg-[#181818] transition-colors duration-300 bg-[url('/assets/Background.svg')] bg-auto">
+            <div className="relative px-5 xl:px-24 sm:px-10 w-full transition-colors duration-400 ">
               <Navbar />
               <Herosection />
               <About />
@@ -150,12 +174,15 @@ function App() {
               <Projects projectsData={projects} />
               <Experience experienceData={experience} />
               <Contact />
-              <Widgets />
+              <Widgets
+                toggleDarkMode={toggleDarkMode}
+                isDarkMode={isDarkMode}
+              />
             </div>
-            <div className="w-full h-full text-center bg-gray-200 text-gray-500">
+            <div className="w-full h-full text-center bg-gray-200 text-gray-500 dark:bg-[#2F2F2F] dark:text-gray-300">
               © 2025 Tharun theja Boyalla. All Rights Reserved.
             </div>
-          </>
+          </div>
         )}
       </BrowserRouter>
     </>

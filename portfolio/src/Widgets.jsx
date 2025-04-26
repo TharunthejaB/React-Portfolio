@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function Widgets() {
+function Widgets({ toggleDarkMode, isDarkMode }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
@@ -28,14 +28,30 @@ function Widgets() {
   return (
     <div className="bottom-10 flex justify-between sticky items-center">
       <div
-        className="rounded-full w-11 h-11 flex justify-center items-center bg-[#FFD857]"
-        id="themechange"
+        className="rounded-full w-11 h-11 flex justify-center items-center bg-[#FFD857] dark:bg-[#104B82] cursor-pointer relative overflow-hidden"
+        onClick={toggleDarkMode}
       >
-        <img src="/assets/light.svg"></img>
+        {/* Light Icon */}
+        <img
+          src="/assets/light.svg"
+          alt="light"
+          className={`absolute transition-all duration-300 ease-in-out ${
+            isDarkMode ? "opacity-0 scale-90" : "opacity-100 scale-100"
+          }`}
+        />
+
+        {/* Dark Icon */}
+        <img
+          src="/assets/dark.svg"
+          alt="dark"
+          className={`absolute transition-all duration-300 ease-in-out ${
+            isDarkMode ? "opacity-100 scale-100" : "opacity-0 scale-90"
+          }`}
+        />
       </div>
 
       <div
-        className="rounded-full w-15 h-15 flex justify-center items-center  bg-[#D96F6F]"
+        className="rounded-full w-15 h-15 flex justify-center items-center  bg-[#D96F6F] dark:bg-[#2A8D65]"
         id="scrolltotop"
         style={{
           visibility: isVisible ? "visible" : "hidden", // Hides the element, but still takes up space

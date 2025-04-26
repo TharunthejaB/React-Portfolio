@@ -10,7 +10,7 @@ function Skills({ skillsData }) {
           <Heading className="w-fit">Skills</Heading>
           <img
             src="/assets/skillsul.svg"
-            className="w-full h-full absolute -z-1 top-5"
+            className="w-full h-full absolute top-5"
           ></img>
         </div>
         <Content>Here's a quick breakdown of what I bring to the table</Content>
@@ -21,7 +21,9 @@ function Skills({ skillsData }) {
             key={index}
             className="flex w-full sm:w-4/12 flex-col text-center items-center justify-center gap-9"
           >
-            <Heading className="w-full">{skills.text}</Heading>
+            <Heading className="w-full" style={{ color: skills.color }}>
+              {skills.text}
+            </Heading>
             <div className="w-full sm:w-1/2 flex sm:grid grid-cols-2 sm:justify-items-center items-center justify-center gap-5">
               {skills.img.map((img, index) => (
                 <img

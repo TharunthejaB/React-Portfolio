@@ -15,7 +15,7 @@ function Herosection() {
             <Heading>Hi, I'm Tharun theja Boyalla</Heading>
             <Heading className="flex flex-col gap-2.5 sm:block">
               a passionate <div className="sm:hidden block"></div>
-              <span className="text-[#C93D3D] text-[30px] sm:text-2xl lg:text-3xl 2xl:text-[40px]">
+              <span className="text-[#C93D3D] dark:text-[#F65C5C] text-[30px] sm:text-2xl lg:text-3xl 2xl:text-[40px]">
                 <ReactTyped
                   strings={["Web Developer", "Video Editor", "UI Designer"]}
                   typeSpeed={75}
@@ -33,7 +33,7 @@ function Herosection() {
           </div>
         </div>
         <div>
-          <button className="rounded-[20px] w-48 h-14 cursor-pointer text-white font-medium bg-green-700">
+          <button className="rounded-[20px] w-48 h-14 cursor-pointer text-white font-medium bg-[#4BB76F]">
             <a href="#contact" className="text-base">
               Get in touch
             </a>

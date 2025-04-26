@@ -20,12 +20,12 @@ function Navbar() {
   };
   return (
     <>
-      <nav className="flex justify-between sticky top-10 backdrop-blur-xs items-center z-20">
+      <nav className="flex justify-between sticky top-10 backdrop-blur-xs items-center z-20 dark:text-white">
         <div className="w-auto h-fit">
           <a href="#herosection">
             <img
               src="/assets/Tharun theja Boyalla.svg"
-              className="w-full h-full"
+              className="w-full h-full dark:invert"
             ></img>
           </a>
         </div>

@@ -9,7 +9,7 @@ function Experience({ experienceData }) {
         <Heading>Experience</Heading>
         <img
           src="/assets/expul.svg"
-          className="w-full h-full absolute -z-1 top-5"
+          className="w-full h-full absolute  top-5"
         ></img>
       </div>
       <div className="w-full h-full flex flex-col gap-10 items-center">
@@ -31,8 +31,9 @@ function Experience({ experienceData }) {
       </div>
       <Content className="text-center">
         Want to know more about my experience? Download my
-        <a href="" className="hover:text-blue-600">
-          resume here.
+        <br></br>
+        <a href="" className="hover:text-blue-400">
+          Resume here.
         </a>
       </Content>
     </section>
