@@ -40,7 +40,7 @@ function Navbar() {
             onClick={handleClick}
           >
             <div
-              className={`bg-gray-700 w-full h-1 rounded-3xl absolute ease-in-out duration-200 
+              className={`bg-gray-700 dark:bg-white w-full h-1 rounded-3xl absolute ease-in-out duration-200 
           ${
             animationStep === "merge" || animationStep === "x"
               ? "top-2"
@@ -50,13 +50,13 @@ function Navbar() {
         `}
             ></div>
             <div
-              className={`bg-gray-700 w-full h-1 rounded-3xl absolute ease-in-out duration-300 
+              className={`bg-gray-700 dark:bg-white w-full h-1 rounded-3xl absolute ease-in-out duration-300 
           ${animationStep === "merge" || animationStep === "x" ? "top-2" : ""}
           ${animationStep === "x" ? "opacity-0" : ""}
         `}
             ></div>
             <div
-              className={`bg-gray-700 w-full h-1 rounded-3xl absolute ease-in-out duration-200 
+              className={`bg-gray-700 dark:bg-white w-full h-1 rounded-3xl absolute ease-in-out duration-200 
           ${
             animationStep === "merge" || animationStep === "x"
               ? "top-2"
@@ -71,7 +71,7 @@ function Navbar() {
       <div
         className={`w-1/2 h-screen fixed ease-in-out duration-500 sm:hidden ${
           animationStep === "x" ? "right-0" : "-right-60"
-        } z-10 top-0 backdrop-blur-md flex pt-30`}
+        } z-10 top-0 backdrop-blur-md flex pt-30 dark:text-white`}
       >
         <div className="w-full gap-[8vw] flex flex-col place-items-center font-bold">
           <a href="#about" onClick={handleLinkClick}>
