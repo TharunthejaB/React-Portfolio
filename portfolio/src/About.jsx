@@ -6,13 +6,13 @@ import ButtonLight from "./ButtonLight";
 
 function About() {
   const icons = [
-    "../public/assets/name.svg",
-    "../public/assets/suitcase.svg",
-    "../public/assets/code2.svg",
-    "../public/assets/email.svg",
-    "../public/assets/company.svg",
-    "../public/assets/location.svg",
-    "../public/assets/tick.svg",
+    "/assets/name.svg",
+    "/assets/suitcase.svg",
+    "/assets/code2.svg",
+    "/assets/email.svg",
+    "/assets/company.svg",
+    "/assets/location.svg",
+    "/assets/tick.svg",
   ];
   return (
     <section
@@ -38,11 +38,7 @@ function About() {
           <button
             className={`group flex items-center justify-center gap-2 rounded-[10px] p-5 w-38 h-10 cursor-pointer text-white font-medium border-2 border-gray-500 hover:bg-gray-700 transition-all duration-300`}
           >
-            <a
-              href="../public/assets/Tharun_theja.pdf"
-              className="text-[12px]"
-              download
-            >
+            <a href="/assets/Tharun_theja.pdf" className="text-[12px]" download>
               Download CV
             </a>
             <span

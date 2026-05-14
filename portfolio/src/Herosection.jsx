@@ -2,46 +2,46 @@ import React from "react";
 import Heading from "./Heading";
 import Content from "./Content";
 import { ReactTyped, Typed } from "react-typed";
-import bannerImage from "../public/assets/T1-removebg-preview.png";
+import bannerImage from "/assets/T1-removebg-preview.png";
 import techImage from "/assets/figma.svg";
 import ButtonRed from "./buttonRed";
 import ButtonLight from "./ButtonLight";
 import { motion, useScroll, useSpring } from "framer-motion";
-import react from "../public/assets/react.svg";
-import js from "../public/assets/js.svg";
-import Node from "../public/assets/Node.js.svg";
-import Git from "../public/assets/github.svg";
+import react from "/assets/react.svg";
+import js from "/assets/js.svg";
+import Node from "/assets/Node.js.svg";
+import Git from "/assets/github.svg";
 
 function Herosection() {
   const icons = [
-    "../public/assets/react.svg",
-    "../public/assets/js.svg",
-    "../public/assets/Node.js.svg",
-    "../public/assets/figma.svg",
+    "/assets/react.svg",
+    "/assets/js.svg",
+    "/assets/Node.js.svg",
+    "/assets/figma.svg",
   ];
   const expTile = [
     {
       title: "3+",
       subtitle: "Years of Experience",
-      icon: "../public/assets/code.svg",
+      icon: "/assets/code.svg",
       color: "red",
     },
     {
       title: "Modern",
       subtitle: "Frontend Development",
-      icon: "../public/assets/desktop.svg",
+      icon: "/assets/desktop.svg",
       color: "red",
     },
     {
       title: "Clean",
       subtitle: "UI Components",
-      icon: "../public/assets/ui.svg",
+      icon: "/assets/ui.svg",
       color: "red",
     },
     {
       title: "Scalable",
       subtitle: "Web Interfaces",
-      icon: "../public/assets/scalability.svg",
+      icon: "/assets/scalability.svg",
       color: "red",
     },
   ];

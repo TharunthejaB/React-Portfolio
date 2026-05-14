@@ -29,26 +29,26 @@ function Experience() {
   ];
   const tileContent = [
     {
-      img: "../public/assets/web.svg",
+      img: "/assets/web.svg",
       title: "Responsive Web Development",
       description: "Building websites that works seamlessly on all devices.",
       color: "#f9eC63",
     },
     {
-      img: "../public/assets/ux.svg",
+      img: "/assets/ux.svg",
       title: "UI/UX Implementation",
       description:
         "Turning designs into beautiful and intiutive user interfaces.",
       color: "#2DDB44",
     },
     {
-      img: "../public/assets/performance.svg",
+      img: "/assets/performance.svg",
       title: "Performance Optimization",
       description: "Ensuring fast load times and smooth user interactions.",
       code: "#3FEBB9",
     },
     {
-      img: "../public/assets/recycle.svg",
+      img: "/assets/recycle.svg",
       title: "Component Reusability",
       description: "Writing clean, reusable, and maintainable components.",
     },

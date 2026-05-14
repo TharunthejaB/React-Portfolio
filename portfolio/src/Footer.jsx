@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../public/assets/Tharun theja Boyalla.svg";
-import icon from "../public/assets/github.svg";
-import email from "../public/assets/email.svg";
-import location from "../public/assets/location.svg";
-import linkedin from "../public/assets/linkedin.svg";
+import logo from "/assets/Tharun theja Boyalla.svg";
+import icon from "/assets/github.svg";
+import email from "/assets/email.svg";
+import location from "/assets/location.svg";
+import linkedin from "/assets/linkedin.svg";
 import Content from "./Content";
 const Footer = () => {
   return (

@@ -1,6 +1,6 @@
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
-import icon from "../public/assets/message.svg";
+import icon from "/assets/message.svg";
 
 function Navbar() {
   const { scrollY } = useScroll();

@@ -12,7 +12,7 @@ function Projects() {
       content:
         "Built an AI-powered interview preparation platform using the MERN stack and Gemini API. The application generates role-specific interview questions, provides intelligent responses and feedback, and delivers a seamless, responsive user experience with modern UI design.",
 
-      img: "../public/assets/Interview Prep.png",
+      img: "/assets/Interview Prep.png",
       link: "https://interview-ai-prep-frontend-lms5.onrender.com/",
     },
     {
@@ -21,7 +21,7 @@ function Projects() {
       content:
         "Designed and developed a modern personal portfolio using React.js and Tailwind CSS to showcase projects, technical skills, and professional experience. Focused on creating a responsive, visually engaging interface with smooth interactions, reusable components, and optimized performance across devices.",
 
-      img: "../public/assets/Portfolio.png",
+      img: "/assets/Portfolio.png",
     },
     {
       title: "Ping Pong Game",
@@ -31,7 +31,7 @@ function Projects() {
       tilecolor: "#4FC977",
       buttoncolor: "#359254",
       subbuttoncolor: "rgba(51, 146, 84, 0.5)",
-      img: "../public/assets/Pingpong.png",
+      img: "/assets/Pingpong.png",
       link: "https://tharunthejab.github.io/Ping-Pong-Game/",
     },
   ];

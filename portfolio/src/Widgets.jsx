@@ -36,7 +36,7 @@ function Widgets({ toggleDarkMode, isDarkMode }) {
       }}
       onClick={scrollToTop}
     >
-      <img src="../public/assets/up-arrow.svg" className=" w-7 h-7"></img>
+      <img src="/assets/up-arrow.svg" className=" w-7 h-7"></img>
     </div>
   );
 }
