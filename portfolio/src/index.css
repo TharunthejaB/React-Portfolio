@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 body {
-  cursor: url(./assets/NewCursor.svg), auto;
+  cursor: url(../public/NewCursor.svg), auto;
   background-color: #181818;
 }
 
@@ -13,5 +13,5 @@ button,
 #projectdetails,
 #scrolltotop,
 #themechange {
-  cursor: url(./assets/cursor-pointer.svg), auto; /* Custom cursor */
+  cursor: url(../public/NewCursor.svg), auto; /* Custom cursor */
 }
