@@ -5,7 +5,7 @@ const ButtonLight = ({ children, href, className }) => {
     <button
       className={`group flex items-center justify-center gap-2 rounded-[10px] p-5 h-10 cursor-pointer text-white font-medium border-2 border-gray-500 hover:bg-gray-700 transition-all duration-300 ${className}`}
     >
-      <a href={href} className="text-[10px] sm:text-sm">
+      <a href={href} className="text-sm">
         {children}
       </a>
       <span
@@ -16,6 +16,8 @@ const ButtonLight = ({ children, href, className }) => {
             group-hover:translate-x-0
             transition-all
             duration-300
+            lg:block
+            hidden
           "
       >
         →

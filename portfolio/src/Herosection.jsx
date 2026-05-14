@@ -95,9 +95,9 @@ function Herosection() {
             <ButtonRed href="#contact">Get in touch</ButtonRed>
             <ButtonLight href="#work">View My work</ButtonLight>
           </div>
-          <div className="w-full h-20 mt-5 mb-5 md:mb-0 flex items-center gap-5">
+          <div className="w-full h-20 mt-5 mb-5 md:mb-0 flex items-center justify-start gap-3 md:gap-5 ">
             <Content>Tech I work with</Content>
-            <div className="flex gap-7">
+            <div className="flex justify-between gap-3 md:gap-5">
               {icons.map((icon, index) => (
                 <img
                   className="w-full h-12 bg-[#333333] p-2 rounded-lg border-1 border-gray-500/30"

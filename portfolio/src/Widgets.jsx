@@ -27,7 +27,7 @@ function Widgets({ toggleDarkMode, isDarkMode }) {
   }, []);
   return (
     <div
-      className="right-25 bottom-25 flex justify-center fixed items-center rounded-full w-15 h-15 bg-[#D96F6F]"
+      className="right-10 bottom-15 md:right-25 md:bottom-25 flex justify-center fixed items-center rounded-full w-15 h-15 bg-[#D96F6F]"
       id="scrolltotop"
       style={{
         visibility: isVisible ? "visible" : "hidden", // Hides the element, but still takes up space
