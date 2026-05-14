@@ -2,12 +2,14 @@
 
 body {
   cursor: url(./assets/NewCursor.svg), auto;
+  background-color: #181818;
 }
 
 input,
 select,
 option,
 a,
+button,
 #projectdetails,
 #scrolltotop,
 #themechange {

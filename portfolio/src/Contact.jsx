@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import Heading from "./Heading";
 import Content from "./Content";
 import emailjs from "@emailjs/browser";
+import Subheading from "./subheading";
 
 function Contact() {
   const form = useRef();
@@ -24,7 +25,7 @@ function Contact() {
           },
           (error) => {
             setSuccessMessage("Oops! Something went wrong. Please try again.");
-          }
+          },
         );
     }
   };
@@ -55,50 +56,29 @@ function Contact() {
     >
       <div className="w-full sm:w-[50%] h-full flex flex-col gap-8 text-center sm:text-left">
         <div className="flex flex-col gap-2">
-          <Heading>Have a project in mind?</Heading>
-          <Content>Feel free to reach out! I'd love to collaborate.</Content>
-        </div>
-        <div className="w-full sm:w-[50%] h-full flex gap-6 justify-center sm:justify-start">
-          <a
-            href="https://in.linkedin.com/in/tharun-theja-boyalla-093070206"
-            target="_blank"
-          >
-            <img
-              src="/assets/linkedin.svg"
-              className="w-15 h-15 2xl:w-20 2xl:h-20 bg-white rounded-full"
-              alt="LinkedIn"
-            />
-          </a>
-          <a href="https://github.com/TharunthejaB" target="_blank">
-            <img
-              src="/assets/github.svg"
-              className="w-15 h-15 2xl:w-20 2xl:h-20 dark:invert"
-              alt="GitHub"
-            />
-          </a>
-          <a
-            href="https://api.whatsapp.com/send/?phone=916300331752&text&type=phone_number&app_absent=0"
-            target="_blank"
-          >
-            <img
-              src="/assets/whatsapp.svg"
-              className="w-15 h-15 2xl:w-20 2xl:h-20"
-              alt="WhatsApp"
-            />
-          </a>
+          <Content color="red">LET'S WORK TOGETHER</Content>
+
+          <Subheading>Have a project in mind?</Subheading>
+          <h1 className="text-white text-xl">
+            Let's build something amazing together
+          </h1>
         </div>
       </div>
 
-      <div className="w-full sm:w-[50%] h-full p-8 flex flex-col gap-6 rounded-[20px] bg-[#f0f0f0] dark:bg-[#2F2F2F]">
+      <div className="w-full sm:w-[50%] h-full p-8 flex flex-col gap-6 rounded-[20px] bg-[#333333]">
         {successMessage && (
           <p className="text-green-500 font-medium text-sm">{successMessage}</p>
         )}
-        <form ref={form} onSubmit={sendEmail} className="space-y-4">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="space-y-4 flex flex-col items-end"
+        >
           <input
             type="text"
             name="user_name"
             placeholder="Name"
-            className="w-full h-11 bg-white rounded-3xl px-5 outline-gray-300 dark:bg-[#444444] dark:text-gray-200"
+            className="w-full h-11 bg-[#444444] rounded-3xl px-5 outline-gray-300 text-gray-200 focus:outline-[#C93D3D]"
           />
           {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
 
@@ -106,7 +86,7 @@ function Contact() {
             type="text"
             name="user_email"
             placeholder="Email"
-            className="w-full h-11 bg-white rounded-3xl px-5 outline-gray-300 dark:bg-[#444444] dark:text-gray-200"
+            className="w-full h-11 bg-[#444444] rounded-3xl px-5 outline-gray-300 text-gray-200 focus:outline-[#C93D3D]"
           />
           {errors.email && (
             <p className="text-red-500 text-sm">{errors.email}</p>
@@ -116,7 +96,7 @@ function Contact() {
             type="text"
             name="phone"
             placeholder="Phone number"
-            className="w-full h-11 bg-white rounded-3xl px-5 outline-gray-400 dark:bg-[#444444] dark:text-gray-200"
+            className="w-full h-11 bg-[#444444] rounded-3xl px-5 outline-gray-400 text-gray-200 focus:outline-[#C93D3D]"
           />
           {errors.phone && (
             <p className="text-red-500 text-sm">{errors.phone}</p>
@@ -125,7 +105,7 @@ function Contact() {
           <textarea
             name="message"
             placeholder="Message"
-            className="w-full h-48 bg-white rounded-3xl text-start p-5 outline-gray-300 dark:bg-[#444444] dark:text-gray-200"
+            className="w-full h-48 bg-[#444444] rounded-3xl text-start p-5  text-gray-200 focus:outline-[#C93D3D]"
           />
           {errors.message && (
             <p className="text-red-500 text-sm">{errors.message}</p>
@@ -134,7 +114,7 @@ function Contact() {
           <input
             type="submit"
             value="Submit"
-            className="w-full h-14 bg-[#4BB76F] text-white rounded-full cursor-pointer hover:bg-[#3aa65c] transition-all"
+            className="rounded-[10px] w-32 h-10 cursor-pointer text-white font-medium hover:bg-[#831e2e] bg-[#b92c43] transition-all duration-300"
           />
         </form>
       </div>
