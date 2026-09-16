@@ -86,7 +86,7 @@ If you'd like to discuss a project, collaboration, or frontend development oppor
 
 🌐 **Portfolio:** https://tharuntheja-portfolio.vercel.app/
 
-💼 **LinkedIn:** https://www.linkedin.com/
+💼 **LinkedIn:** [https://www.linkedin.com/](https://www.linkedin.com/in/tharunthejaboyalla/)
 
 🐙 **GitHub:** https://github.com/TharunthejaB
 
